@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Bingo! Generator</title>
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/dialogs.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/bingo-generator.js"></script>
+		<script src="js/bingo-generator-ui.js"></script>
+		<script src="js/bingo-generator-manager.js"></script>
+	</head>
+
+	<body>
+		<div class="nav-bar dark-bg dark-contrast-text">
+			<div class="btn md-trigger" id="btn-generator" data-modal="generate-dialog">Generar</div>
+			<div class="btn pull-right" id="btn-bingo">Bingo</div>
+		</div>
+
+		<div class="card-place" id="card-place"></div>
+
+		<div class="md-modal md-effect-7" id="generate-dialog">
+			<div class="md-content">
+				<h3>Generador</h3>
+				<div>
+					<p>¿Cúantos cartones deseas generar? <small>Mínimo 1</small></p>
+					<p><input type="text" id="txt-cards" placeholder="Número de cartones"/></p>
+					<div class="buttons">
+						<button class="md-close">Cancelar</button>
+						<button class="md-close" id="btn-modal-generate">Generar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="md-overlay"></div>
+
+		<script src="js/classie.js"></script>
+		<script src="js/modalEffects.js"></script>
+	</body>
+	
+</html>
